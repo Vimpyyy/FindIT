@@ -1,0 +1,290 @@
+/* Home.css */
+
+/* Root and Body */
+
+/* Root Variables */
+:root {
+  --primary-gradient: linear-gradient(135deg, #b400ff 0%, #ffcc00 100%);
+  --secondary-gradient: linear-gradient(45deg, #ff6b6b 0%, #ff8e53 100%);
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --blur: blur(10px);
+  --text-dark: #2d3748;
+  --text-light: #4a5568;
+  --highlight: #ffe066;
+}
+
+/* Home Container */
+.home-container {
+  background: var(--primary-gradient);
+  
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-right: 10%;
+  margin-left: 5%;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: #ffe066;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #b400ff;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(180, 0, 255, 0.3);
+  background: #ffd633;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin: 3rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Lost Items Container */
+.lost-items-container {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Lost Item Card */
+.lost-item-card {
+  background: #ffe066;
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.lost-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Lost Item Image */
+.lost-item-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  border: 2px solid #b400ff;
+}
+
+.lost-item-card:hover .lost-item-image {
+  transform: scale(1.05);
+}
+
+/* Lost Item Details */
+.lost-item-details {
+  padding: 1rem 0;
+}
+
+.lost-item-details h3 {
+  color: #b400ff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.lost-item-details p {
+  color: #92400e;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.lost-item-details p strong {
+  color: #2d3748;
+}
+
+/* No Items Message */
+.no-items-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Feedback Section */
+.feedback-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-card {
+  background: #fef9c3;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  backdrop-filter: var(--blur);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: translateX(10px);
+}
+
+.feedback-icon {
+  font-size: 2rem;
+  color: #b400ff;
+  min-width: 60px;
+  text-align: center;
+}
+
+.feedback-content {
+  flex-grow: 1;
+}
+
+.feedback-text {
+  font-size: 1.1rem;
+  color: #b400ff;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-author {
+  color: #ffcc00;
+  font-weight: 500;
+}
+
+/* Add Feedback Button */
+.add-feedback-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-feedback-button:hover {
+  background: linear-gradient(135deg, #ffcc00, #b400ff);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto; /* Allow scrolling inside the modal */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* Ensure modal content is scrollable */
+  max-height: 90vh; /* Prevent modal from exceeding viewport height */
+}
+
+.modal-content h3 {
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.feedback-input {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  border: 2px solid rgba(180, 0, 255, 0.2);
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  resize: none;
+  font-family: inherit;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.modal-submit-button {
+  background: var(--primary-gradient);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-cancel-button {
+  background: transparent;
+  color: var(--text-light);
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--text-light);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .lost-items-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lost-item-card {
+    margin: 0.5rem;
+  }
+
+  .lost-item-image {
+    height: 200px;
+  }
+
+  .feedback-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}

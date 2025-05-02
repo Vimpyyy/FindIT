@@ -1,0 +1,156 @@
+/* Landing Page Container */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it spans the full viewport height */
+  background: linear-gradient(135deg, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+  color: white; /* Default text color */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Landing Content */
+.landing-content {
+  flex: 1; /* Take up remaining space between header and footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto; /* Center the content */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+/* Heading */
+.landing-content h1 {
+  font-size: 4vw; /* Responsive font size based on viewport width */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  color: #ffffff; /* Bright white text for contrast */
+  animation: fadeInDown 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Description */
+.landing-content p {
+  font-size: 1.5vw; /* Responsive font size based on viewport width */
+  max-width: 800px; /* Limit paragraph width */
+  margin-bottom: 20px;
+  opacity: 0.9;
+  color: #ffe066; /* Light yellow text to complement the gradient */
+  animation: fadeInUp 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Button Container */
+.landing-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center; /* Center buttons */
+}
+
+/* Primary Button */
+.btn-primary {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Pink to Red Gradient */
+  color: white; /* White text for contrast */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5); /* Elevated shadow */
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ff4b2b, #ff416c); /* Reverse Gradient */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 20px rgba(255, 65, 108, 0.7); /* Stronger shadow */
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: linear-gradient(90deg, #1d976c, #93f9b9); /* Green Gradient */
+  color: white; /* White text for contrast */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(29, 151, 108, 0.5); /* Elevated shadow */
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(90deg, #93f9b9, #1d976c); /* Reverse Gradient */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 20px rgba(29, 151, 108, 0.7); /* Stronger shadow */
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #003d82, #007BFF); /* Blue Gradient */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: 100%; /* Full width */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+  color: #d1e8ff; /* Light blue text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-content h1 {
+    font-size: 6vw; /* Adjust heading size for smaller screens */
+  }
+
+  .landing-content p {
+    font-size: 4vw; /* Adjust paragraph size for smaller screens */
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .footer p {
+    font-size: 12px; /* Adjust footer text size for smaller screens */
+  }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
