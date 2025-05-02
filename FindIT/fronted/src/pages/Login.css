@@ -1,0 +1,144 @@
+/* Full-screen page */
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #b400ff, #ffcc00);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Welcome Animation */
+.welcome-container {
+  text-align: center;
+  position: absolute;
+  color: white;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-text {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.welcome-subtext {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Login box with glass effect */
+.login-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  color: white;
+}
+
+/* Fade-in effect for login form */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Keyframe */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Input fields */
+.input-group {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff7f50, #8a2be2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #8a2be2, #ff7f50);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Register section */
+.register-link {
+  margin-top: 15px;
+}
+
+.register-link p {
+  font-size: 14px;
+}
+
+.register-btn {
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background: white;
+  color: #8a2be2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}

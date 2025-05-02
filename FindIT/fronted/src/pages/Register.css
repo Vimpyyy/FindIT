@@ -1,0 +1,150 @@
+/* Full page styling */
+.register-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+}
+
+/* Register container with glassmorphism effect */
+.register-container {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+/* Header styling */
+.register-header h2 {
+  color: #fff; /* Bright white text */
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.register-header p {
+  color: #ffe066; /* Light yellow text */
+  font-size: 14px;
+}
+
+/* Form styling */
+.register-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  color: #ffe066; /* Light yellow text */
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent input background */
+  color: #fff; /* White text */
+  transition: 0.3s;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Semi-transparent placeholder text */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  background: rgba(255, 255, 255, 0.3); /* Slightly brighter background on focus */
+  border: 1px solid #b400ff; /* Purple border on focus */
+  box-shadow: 0 0 8px rgba(180, 0, 255, 0.5); /* Purple glow */
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff4d4d; /* Red color for error message */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Register button */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White text */
+  background: linear-gradient(135deg, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(180, 0, 255, 0.4); /* Purple shadow */
+}
+
+.register-button:hover {
+  background: linear-gradient(135deg, #ffcc00, #b400ff); /* Reverse Gradient */
+  box-shadow: 0 5px 15px rgba(180, 0, 255, 0.6); /* Stronger shadow */
+  transform: translateY(-2px); /* Slight lift */
+}
+
+/* Login button */
+.login-button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #b400ff; /* Purple text */
+  background: #fff; /* White background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white on hover */
+  color: #ffe066; /* Light yellow text */
+  border: 1px solid #ffe066; /* Light yellow border */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .register-header h2 {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
