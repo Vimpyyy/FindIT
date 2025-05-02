@@ -1,0 +1,108 @@
+/* Found Item Form Styles */
+.found-item-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)); /* Subtle gradient */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Title */
+.found-item-form h2 {
+  font-size: 1.8rem;
+  color: #b400ff; /* Purple text */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333; /* Darker text for labels */
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input and Textarea Fields */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  color: #333; /* Dark text */
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #b400ff; /* Purple border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(180, 0, 255, 0.5); /* Purple glow */
+}
+
+textarea {
+  resize: none;
+  height: 120px; /* Increased height for better usability */
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(45deg, #ffcc00, #b400ff); /* Reverse Gradient */
+  transform: scale(1.05); /* Slight lift on hover */
+  box-shadow: 0 4px 10px rgba(180, 0, 255, 0.5); /* Glow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .found-item-form {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+}
+/* Page Background */
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(135deg, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
