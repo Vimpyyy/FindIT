@@ -1,0 +1,93 @@
+/* Footer.css */
+
+.footer {
+  background: linear-gradient(135deg, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+  color: white;
+  padding: 20px 0; /* Adjust padding as needed */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: 100%; /* Ensure the footer spans the full width */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  width: 100%; /* Full width */
+  padding: 0 20px; /* Add padding for spacing */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.footer-info h3 {
+  font-size: 18px; /* Reduced font size */
+  font-weight: 700;
+  margin-bottom: 8px; /* Reduced margin */
+  color: #ffffff; /* White text */
+}
+
+.footer-info p {
+  font-size: 14px; /* Reduced font size */
+  color: #ffe066; /* Light yellow text to complement the gradient */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.footer-nav {
+  margin: 10px 0; /* Reduced margin */
+}
+
+.footer-link {
+  color: #ffffff; /* White text */
+  font-size: 14px; /* Reduced font size */
+  margin: 0 10px; /* Reduced spacing between links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffe066; /* Light yellow hover effect */
+}
+
+.footer-bottom {
+  margin-top: 15px; /* Reduced margin */
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px; /* Reduced padding */
+  font-size: 12px; /* Reduced font size */
+  color: #ffe066; /* Light yellow text */
+}
+
+.footer-policy {
+  margin-top: 8px; /* Reduced margin */
+}
+
+.footer-policy .footer-link {
+  font-size: 12px; /* Reduced font size */
+  margin: 0 8px; /* Reduced spacing between links */
+  color: #ffffff; /* White text */
+}
+
+.footer-policy .footer-link:hover {
+  color: #ffe066; /* Light yellow hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-info h3 {
+    font-size: 16px; /* Further reduced font size for smaller screens */
+  }
+
+  .footer-info p {
+    font-size: 13px; /* Further reduced font size for smaller screens */
+  }
+
+  .footer-link {
+    font-size: 13px; /* Adjusted font size for smaller screens */
+  }
+
+  .footer-bottom {
+    font-size: 11px; /* Adjusted font size for smaller screens */
+  }
+
+  .footer-policy .footer-link {
+    font-size: 11px; /* Adjusted font size for smaller screens */
+  }
+}
