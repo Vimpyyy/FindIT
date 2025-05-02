@@ -1,0 +1,106 @@
+/* Header.css */
+
+.header {
+  background: linear-gradient(135deg, #b400ff, #ffcc00); /* Purple to Yellow Gradient */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-container a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.header-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white; /* Bright white text for contrast */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Navigation Links */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between links */
+}
+
+.header-link {
+  color: white; /* White text for links */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #ffe066; /* Light yellow hover effect */
+}
+
+/* Buttons */
+.header-button {
+  padding: 10px 18px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Report Button */
+.report-button {
+  background: #ffe066; /* Light yellow background */
+  color: #b400ff; /* Purple text */
+}
+
+.report-button:hover {
+  background: #ffd633; /* Darker yellow on hover */
+}
+
+/* Login and Register Buttons */
+.login-button, .register-button {
+  background: white; /* White background */
+  color: #b400ff; /* Purple text */
+}
+
+.login-button:hover, .register-button:hover {
+  background: #f4f4f4; /* Light gray background on hover */
+}
+
+/* Logout Button */
+.logout-button {
+  background: #ff4b2b; /* Red background */
+  color: white; /* White text */
+}
+
+.logout-button:hover {
+  background: #d63020; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center content on smaller screens */
+  }
+
+  .header-nav {
+    flex-wrap: wrap; /* Allow links to wrap */
+    gap: 10px; /* Reduce spacing between links */
+    justify-content: center; /* Center links on smaller screens */
+  }
+
+  .header-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 12px; /* Adjust button padding */
+  }
+}
